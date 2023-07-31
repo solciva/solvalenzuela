@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto&family=Shrikhand&display=swap');
+
+body {
+
+    background-image: url(/publica/img/imgfondo.png);
+    background-size: contain;
+}
+
+
+.navbar {
+    text-align: center;
+    background-color: #BF7E04;
+    font-family: 'Shrikhand';
+}
+
+.carousel {
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    text-align: center;
+    flex-wrap: row nowrap;
+    margin: 3em;
+}
+
+.item1 {
+    grid-column: 2/ 4;
+    grid-row: 1/ 3;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    text-align: center;
+    font-family: 'Shrikhand';
+}
+
+.item1 h1 {
+    font-size: 100%;
+    color: #F2CB05;
+}
+
+/*
+.item1 img {
+    width: 80%;
+    height: auto;
+}
+*/
+.item2 {
+    grid-column: 4/ 8;
+    grid-row: 1/ 3;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-family: 'Shrikhand';
+}
+
+.item2 h1 {
+    font-size: 100%;
+    color: #F2CB05;
+}
+
+/*
+.item2 img {
+    width: 80%;
+    height: auto;
+}
+*/
+.carousel-item {
+    text-align: center;
+    font-family: 'Shrikhand';
+}
+
+.gridcontacto {
+    background-color: #BF7E04;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    text-align: center;
+}
+
+.itemcontacto {
+    grid-column: 2/ 8;
+    grid-row: 1/ 3;
+}
+
+/************************
+estilos paginas internas
+************************/
+.titulo {
+    color: #075555;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.h3 {
+    color: #5abdbd;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.cuerponoticia {
+    color: #683e0a;
+    font-size: 15 px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    list-style-position: inside;
+}
+
+.otrocolor {
+    color: #e98205;
+    font-size: 15 px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+/************************
+
+Footer
+
+************************/
+
+footer {
+    background-color: #BF7E04;
+    color: #683e0a;
+    ;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.wrap-footer {
+    display: grid;
+    grid-template-columns: 600px 200px 200px;
+    column-gap: 20%;
+    padding: 1rem;
+    margin: 2rem auto;
+    max-width: 1800px;
+    font-family: 'Shrikhand';
+}
+
+.logo-element_footer {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.logo-element_footer img {
+    max-height: 75px;
+}
+
+.element-footer h5 {
+    margin: 1rem 0;
+    color: #683e0a;
+    ;
+}
+
+.text-element-footer li {
+    line-height: 2;
+}
+
+.link-elements-footer li a {
+    color: #683e0a;
+    ;
+}
+
+.rrss-element-footer ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.rrss-element-footer img {
+    width: 35px;
+}
+
+.rrss-element-footer li {
+    margin-right: 1rem;
+}
+
+
+@media (max-width:768px) {
+    .wrap-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .carousel-item {
+        width: 100%;
+
+    }
+}
+
+@media (max-width:480px) {
+    .wrap-footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+@media (max-width:320px) {
+    .footer-creds {
+        flex-flow: column;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 10%;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
